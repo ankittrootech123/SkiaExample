@@ -2,10 +2,13 @@ import {createStackNavigator} from '@react-navigation/stack';
 import NAVIGATION_SCREEN_NAME from './NavigationActionType';
 import {HomeScreen, IntroScreen} from '../screens/App';
 import Dashboard from '../screens/App/Dashboard';
+import Instagram from '../screens/App/Instagram';
+import {Glassmorphism} from '../screens/App/Glassmorphism';
+import GyroscopeExample from '../screens/App/GyroscopeExample/Gyroscope';
 
 const commonNavOption = {
-  headerShown: false,
-  gestureEnabled: false,
+  // headerShown: true,
+  gestureEnabled: true,
 };
 
 export const StackNavList = [
@@ -22,6 +25,21 @@ export const StackNavList = [
   {
     name: NAVIGATION_SCREEN_NAME.INTROSCREEN,
     component: IntroScreen,
+    options: commonNavOption,
+  },
+  {
+    name: NAVIGATION_SCREEN_NAME.INSTAGRAM,
+    component: Instagram,
+    options: commonNavOption,
+  },
+  {
+    name: NAVIGATION_SCREEN_NAME.GLASSMORPHISM,
+    component: Glassmorphism,
+    options: commonNavOption,
+  },
+  {
+    name: NAVIGATION_SCREEN_NAME.GYROSCOPE_SCREEN,
+    component: GyroscopeExample,
     options: commonNavOption,
   },
 ];
