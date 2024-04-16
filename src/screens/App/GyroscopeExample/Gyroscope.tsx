@@ -90,7 +90,7 @@ const GyroscopeExample = () => {
           stylez,
         ]}
       />
-      <Animated.ScrollView scrollEnabled={is} onScroll={scrollHandler}>
+      <Animated.ScrollView onScroll={scrollHandler}>
         {Array(100)
           .fill('skjajhd')
           .map(() => (
